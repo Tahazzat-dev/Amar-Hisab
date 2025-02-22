@@ -1,0 +1,43 @@
+
+
+/* ================= 
+      Device responsiveness
+             ================== */
+
+
+ /* extra large monitor */
+ @media screen and (max-width: 1680px) {
+  
+ }
+
+ /* large monitor */
+@media screen and (max-width: 1440px) {
+  
+}
+
+/* small monitor */
+@media screen and (max-width: 1240px) {
+  
+}
+
+/* tablets ( extra large )  */
+@media screen and (max-width: 1023px) {
+  
+}
+
+
+/* tablets ( medium )  */
+@media screen and (max-width: 840px) {
+  
+}
+
+
+/* phones ( extra large )  */
+@media screen and (max-width: 768px) {
+  
+}
+
+/* phones ( small, medium ) */
+@media screen and (max-width: 560px) {
+  
+}

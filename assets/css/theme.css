@@ -1,0 +1,413 @@
+
+/* ===========================
+   CSS Reset (Cross-browser)
+=========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+
+/* ===========================
+   Root Variables
+=========================== */
+:root {
+  --color-primary: #007BFF;
+  --color-secondary: #6C757D;
+  --color-success: #28A745;
+  --color-danger: #DC3545;
+  --color-warning: #FFC107;
+  --color-light: #F8F9FA;
+  --color-dark: #343A40;
+
+  --font-family: 'Arial', sans-serif;
+  --font-size-base: 16px;
+  --line-height: 1.5;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  --border-radius: 4px;
+  --transition: all 0.3s ease;
+
+   /* ==== global font size variables ====  */
+   --fs-xxs: 12px;
+   --fs-xs: 14px;
+   --fs-sm: 16px;
+   --fs-base: 18px;
+   --fs-md: 20px;
+   --fs-lg: 22px;
+   --fs-xl: 27px;
+   --fs-2xl: 32px;
+   --fs-3xl: 34px;
+   --fs-4xl: 40px;
+   --fs-5xl: 60px;
+   --fs-6xl: 72px;
+   /* ======= line height ======== */
+   --lh-normal: normal;
+   --lh-md: 25px;
+   --lh-lg: 40px;
+   /* ==== letter speaching ======== */
+   --ls-xxs: -2.16px;
+   --ls-xs: -1.8px;
+   --ls-sm: -1.02px;
+   --ls-md: -1.2px;
+   --ls-lg: -0.96px;
+   --ls-xl: 0.24px;
+   --ls-2xl: 0.4px;
+}
+
+/* =====================
+  root variable responsiveness
+========================*/
+
+/* ===========================
+   Utility Classes
+=========================== */
+/* ======== flex box styles =========== */
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+.flex_column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .flex_row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .flex_center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+  .flex_align_center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .flex_align_end{
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+
+.flex_justify_center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .flex_justify_between{
+    -webkit-box-pack: justify-between;
+    -ms-flex-pack: justify-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.flex_grow {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1; 
+    flex-grow: 1;
+  }
+
+.flex_grow_double {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2; 
+    flex-grow: 2;
+  }
+
+.flex_shrink {
+  -webkit-flex-shrink: 1; 
+  -ms-flex: 1 1 auto; 
+  flex-shrink: 1;   
+}
+
+.flex_shrink_double {
+  -webkit-flex-shrink: 2; 
+  -ms-flex: 1 2 auto; 
+  flex-shrink: 2;   
+}
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+  }
+
+/* ======== test utility ======== */
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-bold {
+  font-weight: bold;
+}
+
+  
+/*======= font sizes ======== */
+.fs-xxs {
+  font-size: var(--fs-xxs);
+  letter-spacing: var(--ls-xl);
+  line-height: var(--lh-normal);
+}
+
+.fs-xs {
+  font-size: var(--fs-xs);
+  line-height: var(--lh-normal);
+}
+
+.fs-sm {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-normal);
+}
+
+.fs-base {
+  font-size: var(--fs-base);
+  line-height: var(--lh-md);
+}
+
+.fs-md {
+  font-size: var(--fs-md);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-2xl);
+}
+
+.fs-lg-lh-lg {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-lg);
+}
+
+.fs-lg-lh-md {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-md);
+}
+
+.fs-lg-lh-normal {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-normal);
+}
+
+.fs-xl-lh-normal {
+  font-size: var(--fs-xl);
+  line-height: var(--lh-normal);
+}
+
+.fs-xl-lh-lg {
+  font-size: var(--fs-xl);
+  line-height: var(--lh-lg);
+}
+
+.fs-2xl {
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-lg);
+}
+
+.fs-3xl {
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-sm);
+}
+
+.fs-4xl {
+  font-size: var(--fs-4xl);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-md);
+}
+
+.fs-5xl {
+  font-size: var(--fs-5xl);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-xs);
+}
+
+.fs-6xl {
+  font-size: var(--fs-6xl);
+  line-height: var(--lh-normal);
+  letter-spacing: var(--ls-xxs);
+}
+
+/* Spacing */
+.mt-0 { margin-top: 0; }
+.mt-xs { margin-top: var(--spacing-xs); }
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mt-xl { margin-top: var(--spacing-xl); }
+
+.mb-0 { margin-bottom: 0; }
+.mb-xs { margin-bottom: var(--spacing-xs); }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+
+/* Padding */
+.p-0 { padding: 0; }
+.p-xs { padding: var(--spacing-xs); }
+.p-sm { padding: var(--spacing-sm); }
+.p-md { padding: var(--spacing-md); }
+.p-lg { padding: var(--spacing-lg); }
+.p-xl { padding: var(--spacing-xl); }
+
+
+
+/* Border */
+.border {
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+.btn:hover {
+  background-color: darken(var(--color-primary), 10%);
+}
+.btn-secondary {
+  background-color: var(--color-secondary);
+}
+.btn-danger {
+  background-color: var(--color-danger);
+}
+
+/* ===========================
+   Responsive Breakpoints
+=========================== */
+@media (max-width: 1200px) {
+  :root {
+    --font-size-base: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --font-size-base: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 13px;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --font-size-base: 12px;
+  }
+}
+
+/* ===========================
+   Browser Compatibility
+=========================== */
+/* Fix for older versions of Internet Explorer */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html {
+    font-family: 'Arial', sans-serif;
+  }
+}
+
+/* Fix for Safari */
+@supports (-webkit-touch-callout: none) {
+  input,
+  textarea {
+    font-size: inherit;
+  }
+}
+
+/* Fix for older versions of Firefox */
+@-moz-document url-prefix() {
+  input[type='number'] {
+    appearance: textfield;
+  }
+}
