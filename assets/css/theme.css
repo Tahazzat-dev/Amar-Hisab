@@ -62,26 +62,109 @@ ol {
    Root Variables
 =========================== */
 :root {
-  --color-primary: #007BFF;
-  --color-secondary: #6C757D;
-  --color-success: #28A745;
-  --color-danger: #DC3545;
-  --color-warning: #FFC107;
-  --color-light: #F8F9FA;
-  --color-dark: #343A40;
+  --clr-primary-900: #FC4100;
+  --clr-primary-700: #f24911f9;
+  --clr-secondary-900: #001233;
+  --clr-secondary-700: #00215E;
+  --clr-success-900: #28A745;
+  --clr-success-700: #349e4c;
+  --clr-danger: #ff001a;
+  --clr-warning: #FFC107;
+  --clr-light: #ffffff;
+  --clr-accent: #e1eefc;
+  --clr-dark: #000000;
 
   --font-family: 'Arial', sans-serif;
-  --font-size-base: 16px;
-  --line-height: 1.5;
+  --line-height: normal;
 
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
+  --spacing-xs: 1.75rem;
+  --spacing-sm: 2.75rem;
+  --spacing-md: 4.5rem;
+  --spacing-lg: 5rem;
+  --spacing-xl: 7rem;
 
-  --border-radius: 4px;
-  --transition: all 0.3s ease;
+  --transition-fast: 0.1s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.5s;
+
+   /* ==== global font size variables ====  */
+   --fs-xxs: 12px;
+   --fs-xs: 14px;
+   --fs-sm: 16px;
+   --fs-base: 16px;
+   --fs-md: 16px;
+   --fs-lg: 18px;
+   --fs-xl: 20px;
+   --fs-2xl: 24px;
+   --fs-3xl: 27px;
+   --fs-4xl: 32px;
+   --fs-5xl: 37px;
+   --fs-6xl: 42px;
+
+   /* ======= line height ======== */
+   --lh-normal: normal;
+   --lh-md: 25px;
+   --lh-lg: 32px;
+}
+
+/* =====================
+  root variable responsiveness
+========================*/
+
+/* phones ( small, medium ) */
+@media screen and (min-width: 561px) {
+  
+}
+
+/* phones ( extra large )  */
+@media screen and (min-width: 768px) {
+  
+}
+
+
+/* tablets ( medium )  */
+@media screen and (min-width: 841px) {
+  
+}
+
+
+
+/* tablets ( extra large )  */
+@media screen and (min-width: 1024px) {
+  
+}
+
+
+
+
+
+/* small monitor */
+@media screen and (min-width: 1241px) {
+  
+}
+
+
+
+ /* large monitor */
+ @media screen and (min-width: 1441px) {
+  
+ }
+
+
+
+ /* extra large monitor */
+ @media screen and (min-width: 1681px) {
+  :root{
+    
+  --spacing-xs: 1.75rem;
+  --spacing-sm: 2.75rem;
+  --spacing-md: 4.5rem;
+  --spacing-lg: 5rem;
+  --spacing-xl: 7rem;
+
+  --transition-fast: 0.1s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.5s;
 
    /* ==== global font size variables ====  */
    --fs-xxs: 12px;
@@ -100,6 +183,7 @@ ol {
    --lh-normal: normal;
    --lh-md: 25px;
    --lh-lg: 40px;
+
    /* ==== letter speaching ======== */
    --ls-xxs: -2.16px;
    --ls-xs: -1.8px;
@@ -108,11 +192,10 @@ ol {
    --ls-lg: -0.96px;
    --ls-xl: 0.24px;
    --ls-2xl: 0.4px;
-}
+  }
+ }
 
-/* =====================
-  root variable responsiveness
-========================*/
+
 
 /* ===========================
    Utility Classes
@@ -225,7 +308,6 @@ ol {
 /*======= font sizes ======== */
 .fs-xxs {
   font-size: var(--fs-xxs);
-  letter-spacing: var(--ls-xl);
   line-height: var(--lh-normal);
 }
 
@@ -247,7 +329,6 @@ ol {
 .fs-md {
   font-size: var(--fs-md);
   line-height: var(--lh-normal);
-  letter-spacing: var(--ls-2xl);
 }
 
 .fs-lg-lh-lg {
@@ -278,57 +359,27 @@ ol {
 .fs-2xl {
   font-size: var(--fs-2xl);
   line-height: var(--lh-normal);
-  letter-spacing: var(--ls-lg);
 }
 
 .fs-3xl {
   font-size: var(--fs-3xl);
   line-height: var(--lh-normal);
-  letter-spacing: var(--ls-sm);
 }
 
 .fs-4xl {
   font-size: var(--fs-4xl);
   line-height: var(--lh-normal);
-  letter-spacing: var(--ls-md);
 }
 
 .fs-5xl {
   font-size: var(--fs-5xl);
   line-height: var(--lh-normal);
-  letter-spacing: var(--ls-xs);
 }
 
 .fs-6xl {
   font-size: var(--fs-6xl);
   line-height: var(--lh-normal);
-  letter-spacing: var(--ls-xxs);
 }
-
-/* Spacing */
-.mt-0 { margin-top: 0; }
-.mt-xs { margin-top: var(--spacing-xs); }
-.mt-sm { margin-top: var(--spacing-sm); }
-.mt-md { margin-top: var(--spacing-md); }
-.mt-lg { margin-top: var(--spacing-lg); }
-.mt-xl { margin-top: var(--spacing-xl); }
-
-.mb-0 { margin-bottom: 0; }
-.mb-xs { margin-bottom: var(--spacing-xs); }
-.mb-sm { margin-bottom: var(--spacing-sm); }
-.mb-md { margin-bottom: var(--spacing-md); }
-.mb-lg { margin-bottom: var(--spacing-lg); }
-.mb-xl { margin-bottom: var(--spacing-xl); }
-
-/* Padding */
-.p-0 { padding: 0; }
-.p-xs { padding: var(--spacing-xs); }
-.p-sm { padding: var(--spacing-sm); }
-.p-md { padding: var(--spacing-md); }
-.p-lg { padding: var(--spacing-lg); }
-.p-xl { padding: var(--spacing-xl); }
-
-
 
 /* Border */
 .border {
