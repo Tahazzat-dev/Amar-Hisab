@@ -1,3 +1,178 @@
+:root {
+      --clr-primary-900: #FC4100;
+      --clr-primary-700: #f24911f9;
+      --clr-secondary-900: #001233;
+      --clr-secondary-700: #00215E;
+      --clr-success-900: #28A745;
+      --clr-success-700: #349e4c;
+      --clr-danger: #ff001a;
+      --clr-warning: #FFC107;
+      --clr-light: #ffffff;
+      --clr-accent-900: #e1eefc;
+      --clr-accent-700: #d3d3d3;
+      --clr-dark: #000000;
+    
+      --font-family: 'Roboto', sans-serif;
+      --line-height: normal;
+    
+      --spacing-xs: 1.25rem; 
+      --spacing-sm: 1.75rem;  
+      --spacing-md: 2rem; 
+      --spacing-lg: 2.5rem; 
+      --spacing-xl: 4rem; 
+    
+      --transition-fast: 0.1s;
+      --transition-normal: 0.3s;
+      --transition-slow: 0.5s;
+    
+       /* ==== global font size variables ====  */
+       --fs-xxs: 0.75rem;  
+      --fs-xs: 0.875rem;  
+      --fs-sm: 1rem; 
+      --fs-base: 1rem;      
+      --fs-md: 1rem;        
+      --fs-lg: 1.125rem;    
+      --fs-xl: 1.25rem;     
+      --fs-2xl: 1.5rem;     
+      --fs-3xl: 1.6875rem;  
+      --fs-4xl: 2rem;       
+      --fs-5xl: 2.3125rem;  
+      --fs-6xl: 2.625rem;   
+    
+       /* ======= line height ======== */
+       --lh-normal: normal;
+    }
+/* TODO: have to delete above code */
+
+
+
+[data-lan="en"], [data-lan="bn"] {
+      display: none;
+    }
+    
+    :lang(en) [data-lan="en"] {
+      display: inline;
+    }
+    
+    :lang(bn) [data-lan="bn"] {
+      display: inline;
+    }
+
+    
+body{
+      background-color: var(--clr-accent-900);
+      font-size: var(--fs-base); 
+      line-height: var(--lh-normal);
+      color: var(--clr-dark);
+      font-family: var(--font-family);
+      position: relative;
+      box-sizing: border-box;
+}
+
+body.dark{
+      background-color: var(--clr-dark);
+      color: var(--clr-light);
+}
+
+
+.AH_main{
+      height: 100vh;
+      height: 100dvh;
+}
+
+/* header style starts */
+
+.AH_header{
+      width: 100%;
+      position: fixed;
+     top: 0;
+     left: 0;
+     padding: 10px 16px;
+     background-color: var(--clr-secondary-700);
+     color: var(--clr-accent-900);
+}
+
+.AH_header .theme-toggler{
+      background:linear-gradient(to right, rgba(0, 0, 0, 0.488), rgba(255, 255, 255, 0.407));
+      width: 50px;
+      height: 30px;
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid var(--clr-accent-700);
+      position: relative;
+}
+
+.AH_header .theme-toggler .icon-box{
+      width: 28px;
+      height: 100%;
+      position: relative;
+      padding: 3px 1.5px;
+      transition:var(--transition-normal);
+      transform: translateX(68%);
+}
+ 
+.dark .AH_header .icon-box{
+      transform: translateX(0);
+}
+
+
+.AH_header .theme-toggler img{
+      width: 25px;
+      height:25px;
+      object-fit: contain;
+      position: absolute;
+      top: 1.5px;
+      left: 1.5px;
+      transition: var(--transition-normal);
+}
+
+.AH_header .theme-toggler img.moon{
+      opacity: 0;
+}
+
+.dark .AH_header .theme-toggler img.moon{
+      opacity: 1;
+}
+
+.dark .AH_header .theme-toggler img.sun{
+      opacity: 0;
+}
+
+.AH_header .theme-toggler .icon-box .hidden{
+      display: none;
+}
+
+.AH_header #language-selector{
+      background-color: var(--clr-secondary-700);
+      color: var(--clr-accent-900);
+}
+
+
+.AH_header{}
+.AH_header{}
+.AH_header{}
+
+/* theme toggelr */
+/* header style ends */
+
+/* onboarding page  registration /login */
+#onboarding-page.AH_main{
+      padding: 100px 0;
+      overflow: hidden;
+}
+
+.AH_into-slider-wrap{
+      width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* ================= 
@@ -5,39 +180,41 @@
              ================== */
 
 
- /* extra large monitor */
- @media screen and (max-width: 1680px) {
-  
- }
-
- /* large monitor */
-@media screen and (max-width: 1440px) {
-  
-}
-
-/* small monitor */
-@media screen and (max-width: 1240px) {
-  
-}
-
-/* tablets ( extra large )  */
-@media screen and (max-width: 1023px) {
-  
-}
-
-
-/* tablets ( medium )  */
-@media screen and (max-width: 840px) {
-  
-}
-
-
-/* phones ( extra large )  */
-@media screen and (max-width: 768px) {
-  
-}
-
 /* phones ( small, medium ) */
-@media screen and (max-width: 560px) {
-  
-}
+@media screen and (min-width: 561px) {
+     
+    }
+    
+    /* phones ( extra large )  */
+    @media screen and (min-width: 768px) {
+    
+    }
+    
+    
+    /* tablets ( medium )  */
+    @media screen and (min-width: 841px) {
+    
+    }
+    
+    
+    
+    /* tablets ( extra large )  */
+    @media screen and (min-width: 1024px) {
+     
+    }
+    
+    
+    
+    
+    
+    /* small monitor */
+    @media screen and (min-width: 1241px) {
+    
+    }
+    
+    
+    
+     /* large monitor */
+     @media screen and (min-width: 1441px) {
+     
+     }
