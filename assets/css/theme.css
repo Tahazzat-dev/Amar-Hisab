@@ -39,11 +39,30 @@ select {
   font: inherit;
 }
 
+select{
+ /* Default state styles */
+ /* appearance: none;
+ -webkit-appearance: none; 
+ -moz-appearance: none; */
+}
+
+select:focus {
+  outline: none;
+}
+
+select:hover {
+  /* border-color:transparent */
+}
+
+select::-ms-expand {
+  /* display: none; */
+}
+
+
 button {
   cursor: pointer;
   border: 0;
   outline: none;
-
 }
 
 a {
