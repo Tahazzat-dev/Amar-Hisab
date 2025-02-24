@@ -287,7 +287,7 @@ ol {
    Utility Classes
 =========================== */
 /* ======== flex box styles =========== */
-.AH_flex {
+.TN_flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -417,6 +417,14 @@ ol {
   font-weight: bold;
 }
 
+.link_text{
+  color: var(--clr-primary-700);
+  transition: var(--transition-normal);
+}
+.link_text:hover{
+  color: var(--clr-primary-900);
+}
+
   
 /*======= font sizes ======== */
 .fs-xxs {
@@ -495,7 +503,7 @@ ol {
 }
 
 /* Button Styles */
-.AH_btn {
+.TN_btn {
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
@@ -504,18 +512,18 @@ ol {
   transition: var(--transition-normal);
 }
 
-.AH_btn.btn-primary{
+.TN_btn.btn-primary{
   background-color: var(--clr-primary-700);
   color: var(--clr-light);
 }
 
-.AH_btn.btn-primary:hover{
+.TN_btn.btn-primary:hover{
   background-color: var(--clr-primary-900);
 }
 
 
 /* container */
-.AH_container{
+.TN_container{
   width: 100%;
   padding:16px ;
 }
@@ -523,7 +531,7 @@ ol {
   /* large monitor */
   @media screen and (min-width: 768px) {
      /* container */
-.AH_container{
+.TN_container{
   max-width: 1480px;
   padding:20px ;
 }

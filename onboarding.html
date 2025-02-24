@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="">
-    <header class="AH_header">
-      <nav class="AH_flex flex_align_center">
+    <header class="TN_header">
+      <nav class="TN_flex flex_align_center">
 
         <!-- theme switcher -->
-            <button data-val="dark" class="theme-toggler AH_flex dark">
+            <button data-val="dark" class="theme-toggler TN_flex dark">
                 <div class="icon-box">
                     <img class="moon" src="assets/media/icon/moon-icon.svg" alt="Moon Icon">
                 <img class="sun" src="assets/media/icon/sun-icon.svg" alt="Sun Icon">
@@ -36,7 +36,159 @@
       </nav>
     </header>
 
-    <footer class="AH_footer"></footer>
+
+
+    
+<main
+id="onboarding-page"
+class="TN_main TN_flex flex_column justify_center"
+>
+<!-- intro starts -->
+<section class="TN_into-slider-wrap">
+  <div class="TN_container TN_intro-slider-inner">
+    <div class="TN_intro-slider">
+      <div class="TN_intro-slide">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/media/img/intro/into-slider-first-large.png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="assets/media/img/intro/into-slider-first-small.png"
+          />
+          <img
+            src="assets/media/img/intro/into-slider-first-large.png"
+            alt="Slider Image"
+          />
+        </picture>
+        <p>
+          <span data-lan="en">Your Daily Calculations, Simplified.</span
+          ><span data-lan="bn">দৈনিক হিসাব এখন আরো সহজ </span>
+        </p>
+      </div>
+      <div class="TN_intro-slide">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/media/img/intro/into-slider-first-large.png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="assets/media/img/intro/into-slider-first-small.png"
+          />
+          <img
+            src="assets/media/img/intro/into-slider-first-large.png"
+            alt="Slider Image"
+          />
+        </picture>
+        <p>
+          <span data-lan="en"
+            >A Smart Way to Keep Your Daily Records</span
+          >
+          <span data-lan="bn"
+            >আপনার দৈনিক রেকর্ড রাখার স্মার্ট উপায়।</span
+          >
+        </p>
+      </div>
+      <div class="TN_intro-slide">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/media/img/intro/into-slider-first-large.png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="assets/media/img/intro/into-slider-first-small.png"
+          />
+          <img
+            src="assets/media/img/intro/into-slider-first-large.png"
+            alt="Slider Image"
+          />
+        </picture>
+        <p>
+          <span data-lan="en"
+            >Track, Calculate, and Organize Every Day.</span
+          >
+          <span data-lan="bn">
+            প্রতিদিন ট্র্যাক করুন, হিসাব করুন, এবং সংগঠিত করুন।</span
+          >
+        </p>
+      </div>
+      <div class="TN_intro-slide">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="assets/media/img/intro/into-slider-first-large.png"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="assets/media/img/intro/into-slider-first-small.png"
+          />
+          <img
+            src="assets/media/img/intro/into-slider-first-large.png"
+            alt="Slider Image"
+          />
+        </picture>
+        <p>
+          <span data-lan="en">
+            Effortless Tracking for Your Daily Calculations.</span
+          >
+          <span data-lan="bn"
+            >আপনার দৈনিক হিসাবের জন্য সহজ ট্র্যাকিং।</span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- intro ends -->
+
+<!-- register / login  starts-->
+<section class="authentication-wrap flex_grow">
+  <div class="TN_container TN_flex flex_column authentication-inner">
+    <h3 class="fs-2xl">
+      <span data-lan="en">Registration / Login </span>
+      <span data-lan="bn">রেজিস্ট্রেশন / লগইন করুন </span>
+    </h3>
+    <form class="TN_flex flex_column flex_grow" action="">
+     <div class="input-box">
+      <input
+      class="multi-lan"
+      data-en="Phone number"
+      data-bn="মোবাইল নম্বর"
+      type="text"
+      placeholder="Phone number"
+    />
+     </div>
+      <p class="register-info">
+        <span data-lan="en">To register, use the mobile number registered with your NID.</span>
+        <span data-lan="bn">রেজিস্ট্রেশন করতে আপনার NID দিয়ে নিবন্ধিত মোবাইল নম্বর ব্যবহার করুন</span>
+      </p>
+      <p></p>
+
+      <div class="button-box flex_grow TN_flex flex_column">
+        <div class="spacher flex_grow"></div>
+        <button type="submit" class="TN_btn btn-primary">
+          <span data-lan="en">Next</span>
+          <span data-lan="bn">পরবর্তী </span>
+        </button>
+  
+        <p class="terms">
+        <span data-lan="en">By proceeding, you agree to the <a class="link_text" href="#">terms and conditions</a> of TradeNote.</span>
+        <span data-lan="bn">পরবর্তীতে যাওয়ার নির্দেশের মাধ্যমে ট্রেডনোটের <a class="link_text" href="#">শর্তাবলীতে</a> সম্মতি প্রদান করছেন </span>
+        </p>
+      </div>
+    </form>
+
+
+    
+  </div>
+</section>
+<!-- register / login  ends-->
+</main>
+
+    <footer class="TN_footer"></footer>
     <!-- scripts -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/slick-slider.js"></script>

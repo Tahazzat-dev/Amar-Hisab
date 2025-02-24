@@ -80,7 +80,7 @@ $(document).ready(function () {
   const themeSwitcher = new ThemeSwitcher();
 
   // slick slider
-  $(".AH_intro-slider").slick({
+  $(".TN_intro-slider").slick({
     // Basic Settings
     slidesToShow: 1,
     slidesToScroll: 1,
