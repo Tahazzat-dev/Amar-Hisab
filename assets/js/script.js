@@ -44,6 +44,8 @@ $(document).ready(function () {
     }
   }
 
+  const languageSwitcher = new LanguageSwitcher();
+
   class ThemeSwitcher {
     constructor() {
       this.init();
@@ -75,9 +77,33 @@ $(document).ready(function () {
       }
     }
   }
-
-  const languageSwitcher = new LanguageSwitcher();
   const themeSwitcher = new ThemeSwitcher();
+
+  // registration process
+  class Registration{
+    constructor() {
+      this.init();
+    }
+
+    // initialize
+    init(){
+      this.bindEvents();
+    }
+
+    // events
+    bindEvents(){
+     $('.registration-input').on('focus', this.toggleIntroSlider) 
+     $('.registration-input').on('blur', this.toggleIntroSlider) 
+    }
+
+    // methods
+    toggleIntroSlider(e){
+      $('.TN_into-slider-wrap').slideToggle();
+    }
+
+  }
+
+  const registration = new Registration();
 
   // slick slider
   $(".TN_intro-slider").slick({

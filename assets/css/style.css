@@ -78,6 +78,7 @@ body.dark{
 .TN_main{
       height: 100vh;
       height: 100dvh;
+      overflow-y: auto;
 }
 
 /* header style starts */
@@ -90,6 +91,7 @@ body.dark{
      padding: 10px 16px;
      background-color: var(--clr-secondary-700);
      color: var(--clr-accent-900);
+     z-index: 9999;
 }
 
 .TN_header nav{
@@ -162,7 +164,7 @@ body.dark{
 
 
 
-.TN_header{}
+
 .TN_header{}
 .TN_header{}
 
@@ -178,9 +180,14 @@ body.dark{
 /* header style ends */
 
 /* onboarding page  registration /login */
+
+#onboarding-page{
+      max-width: 450px;
+      margin: 0 auto;
+}
+
 #onboarding-page.TN_main{
       padding-top: 100px;
-      overflow: hidden;
 }
 
 .TN_into-slider-wrap{
@@ -239,7 +246,7 @@ transition: width var(--transition-normal);
       opacity: 0;
 }
 .TN_into-slider-wrap .button-box{
-      
+     margin-top: 15px; 
 }
 
 
@@ -278,6 +285,13 @@ transition: width var(--transition-normal);
       margin-top: 10px;
       position: relative;
       z-index: 0;
+      transition: var(--transition-normal);
+}
+
+.authentication-inner form input:focus{
+      border: 1px solid var(--clr-primary-500);
+      outline: none;
+      box-shadow: unset;
 }
 
 .dark .authentication-inner form input{
@@ -306,7 +320,7 @@ transition: width var(--transition-normal);
 }
 
 .authentication-inner .register-info{
-      margin:8px 0;
+      margin-bottom: 10px;
 }
 .authentication-inner .terms{
       margin-top: 10px;
@@ -325,7 +339,11 @@ transition: width var(--transition-normal);
 
 /* phones ( small, medium ) */
 @media screen and (min-width: 561px) {
-     
+
+      /* onboarding page */
+      #onboarding-page{
+            max-width: 500px;
+      }
     }
     
     /* phones ( extra large )  */
@@ -343,7 +361,23 @@ transition: width var(--transition-normal);
     
     /* tablets ( extra large )  */
     @media screen and (min-width: 1024px) {
-     
+      #onboarding-page.TN_main{
+            max-width: 500px;
+            padding-top: 0;
+      }
+
+      .TN_into-slider-wrap picture img {
+            max-width: 300px;
+        }
+
+      #onboarding-page .authentication-wrap{
+            flex-grow: 0;
+      }
+
+      #onboarding-page .button-box{
+            flex-grow: 0;
+            margin-top: 40px;
+      } 
     }
     
     

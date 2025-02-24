@@ -81,6 +81,7 @@ ol {
 :root {
   --clr-primary-900: #FC4100;
   --clr-primary-700: #f24911f9;
+  --clr-primary-500: #ff8961f9;
   --clr-secondary-900: #001233;
   --clr-secondary-700: #00215E;
   --clr-success-900: #28A745;
@@ -423,6 +424,7 @@ ol {
 }
 .link_text:hover{
   color: var(--clr-primary-900);
+  text-decoration: underline;
 }
 
   
