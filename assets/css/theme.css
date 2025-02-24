@@ -527,7 +527,7 @@ ol {
 /* container */
 .TN_container{
   width: 100%;
-  padding:16px ;
+  padding: 0 16px ;
 }
 
   /* large monitor */
@@ -535,7 +535,7 @@ ol {
      /* container */
 .TN_container{
   max-width: 1480px;
-  padding:20px ;
+  padding:0 20px ;
 }
   }
 
